@@ -36,7 +36,7 @@ public class RegistrationController {
             return "registration";
         }
 
-        staffService.saveNewClient(form);
+        staffService.saveNewStaff(form);
         return "redirect:/login";
     }
 }

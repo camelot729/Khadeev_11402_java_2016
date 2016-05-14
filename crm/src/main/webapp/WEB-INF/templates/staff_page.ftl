@@ -7,7 +7,8 @@
     <title>demo</title>
     <meta name="description" content="Bootstrap Metro Dashboard">
     <meta name="author" content="Dennis Ji">
-    <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <meta name="keyword"
+          content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <!-- end: Meta -->
 
     <!-- start: Mobile Specific -->
@@ -19,7 +20,8 @@
     <link href="/resources/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link id="base-style" href="/resources/css/style.css" rel="stylesheet">
     <link id="base-style-responsive" href="/resources/css/style-responsive.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext'
+          rel='stylesheet' type='text/css'>
     <!-- end: CSS -->
 
 
@@ -38,8 +40,6 @@
     <!-- end: Favicon -->
 
 
-
-
 </head>
 
 <body>
@@ -47,43 +47,42 @@
 <div class="navbar">
     <div class="navbar-inner">
         <div class="container-fluid">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+            <a class="btn btn-navbar" data-toggle="collapse"
+               data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="index.html"><span>camelot</span></a>
+            <a class="brand" href="/staff"><span>camelot</span></a>
 
             <!-- start: Header Menu -->
             <div class="nav-no-collapse header-nav">
                 <ul class="nav pull-right">
 
 
-                    <li >
+                    <li>
 
                         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="halflings-icon white user"></i> Имя юзера
+                            <i class="halflings-icon white user"></i> ${staff.firstname}
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-title">
                                 <span>Account Settings</span>
                             </li>
-                            <li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-                            <li><a href="login.html"><i class="halflings-icon off"></i> Logout</a></li>
+                            <li><a href="/staff"><i class="halflings-icon user"></i> Profile</a></li>
+                            <li><a href="/logout"><i class="halflings-icon off"></i> Logout</a></li>
                         </ul>
                     </li>
 
 
                 </ul>
                 <!-- end: User Dropdown -->
-                </ul>
             </div>
             <!-- end: Header Menu -->
         </div>
     </div>
 </div>
-
 
 
 <!-- start: Header -->
@@ -95,30 +94,12 @@
         <div id="sidebar-left" class="span2">
             <div class="nav-collapse sidebar-nav">
                 <ul class="nav nav-tabs nav-stacked main-menu">
-                    <li><a href="/staff/calendar"><i class="icon-calendar"></i><span class="hidden-tablet"> Рассписание</span></a></li>
-                    <!-- <li><a href="messages.html"><i class="icon-envelope"></i><span class="hidden-tablet"> Messages</span></a></li> -->
-                    <#--<li><a href="tasks.html"><i class="icon-tasks"></i><span class="hidden-tablet"> Tasks</span></a></li>-->
-                    <li><a href="/staff/profile"><i class="halflings-icon user"></i><span class="hidden-tablet">Profile</span></a> </li>
-                    <li><a href="/logout"><i class="halflings-icon off"></i><span class="hidden-tablet">Exit</span></a> </li>
-                    <!-- <li><a href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> UI Features</span></a></li> -->
-                    <!-- <li><a href="widgets.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Widgets</span></a></li> -->
-                    <#--<li>-->
-                        <#--<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Dropdown</span><span class="label label-important"> 3 </span></a>-->
-                        <#--<ul>-->
-                            <#--<li><a class="submenu" href="submenu.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 1</span></a></li>-->
-                            <#--<li><a class="submenu" href="submenu2.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 2</span></a></li>-->
-                            <#--<li><a class="submenu" href="submenu3.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 3</span></a></li>-->
-                        <#--</ul>-->
-                    <#--</li>-->
-                    <#--<li><a href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> Forms</span></a></li>-->
-                    <#--<li><a href="chart.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> Charts</span></a></li>-->
-                    <!-- <li><a href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> Typography</span></a></li> -->
-                    <!-- <li><a href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Gallery</span></a></li> -->
-                    <#--<li><a href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> Tables</span></a></li>-->
-                    <#--<li><a href="/calendar"><i class="icon-calendar"></i><span class="hidden-tablet"> Calendar</span></a></li>-->
-                    <!-- <li><a href="file-manager.html"><i class="icon-folder-open"></i><span class="hidden-tablet"> File Manager</span></a></li> -->
-                    <!-- <li><a href="icon.html"><i class="icon-star"></i><span class="hidden-tablet"> Icons</span></a></li> -->
-                    <!-- <li><a href="login.html"><i class="icon-lock"></i><span class="hidden-tablet"> Login Page</span></a></li> -->
+                    <li><a href="/staff"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Profile</span></a>
+                    </li>
+                    <li><a href="/staff/calendar"><i class="icon-calendar"></i><span
+                            class="hidden-tablet"> Calendar</span></a></li>
+                    <li><a href="/logout"><i class="icon-off"></i><span
+                            class="hidden-tablet"> Logout</span></a></li>
                 </ul>
             </div>
         </div>
@@ -127,34 +108,95 @@
         <noscript>
             <div class="alert alert-block span10">
                 <h4 class="alert-heading">Warning!</h4>
-                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                    enabled to use this site.</p>
             </div>
         </noscript>
 
         <!-- start: Content -->
         <div id="content" class="span10">
-
-
             <ul class="breadcrumb">
                 <li>
                     <i class="icon-home"></i>
-                    <a href="index.html">Home</a>
+                    <a href="/staff">Home</a>
                     <i class="icon-angle-right"></i>
                 </li>
-                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Profile</a></li>
             </ul>
+        <div class="span10" align="center">
+            <div class=""></div>
+        <div class="span3">
+        <#if staff.sex == 'MALE'>
+            <img src="resources/img/gallery/photo12.jpg" class="img-circle" style="height: 200px">
+        </div>
+        <#else >
+            <img src="resources/img/gallery/photo13.jpg" class="img-circle" style="height: 200px">
+        </div>
+        </#if>
+            <div class="span6">
+                <table class="table table-responsive">
+                    <tr>
+                        <th>
+                            Name :
+                        </th>
+                        <td>
+                        ${staff.firstname}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Surname :
+                        </th>
+                        <td>
+                        ${staff.surname}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Email :
+                        </th>
+                        <td>
+                        ${staff.email}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Login :
+                        </th>
+                        <td>
+                        ${staff.login}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Sex :
+                        </th>
+                        <td>
+                        ${staff.sex}
+                        </td>
+                    </tr>
 
-        </div><!--/.fluid-container-->
+                </table>
+            </div>
 
-        <!-- end: Content -->
-    </div><!--/#content.span10-->
-</div><!--/fluid-row-->
+
+        </div>
+
+    </div>
+    <!--/.fluid-container-->
+    <!-- end: Content -->
+</div>
+<!--/#content.span10-->
+</div>
+<!--/fluid-row-->
 
 
 <footer>
 
     <p>
-        <span style="text-align:left;float:left">&copy; 2013 <a href="http://vk.com/camelot729" alt="Bootstrap_Metro_Dashboard">Kamil Khadeev</a></span>
+        <span style="text-align:left;float:left">&copy; 2013 <a href="http://vk.com/camelot729"
+                                                                alt="Bootstrap_Metro_Dashboard">Kamil Khadeev</a></span>
 
     </p>
 

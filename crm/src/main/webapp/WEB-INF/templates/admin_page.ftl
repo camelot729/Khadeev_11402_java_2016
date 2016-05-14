@@ -53,7 +53,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="/staff"><span>camelot</span></a>
+            <a class="brand" href="index.html"><span>camelot</span></a>
 
             <!-- start: Header Menu -->
             <div class="nav-no-collapse header-nav">
@@ -63,7 +63,7 @@
                     <li>
 
                         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="halflings-icon white user"></i> ${staff.firstname}
+                            <i class="halflings-icon white user"></i> ${admin.firstname}
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -78,6 +78,7 @@
 
                 </ul>
                 <!-- end: User Dropdown -->
+                </ul>
             </div>
             <!-- end: Header Menu -->
         </div>
@@ -94,10 +95,16 @@
         <div id="sidebar-left" class="span2">
             <div class="nav-collapse sidebar-nav">
                 <ul class="nav nav-tabs nav-stacked main-menu">
-                    <li><a href="/staff"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Profile</span></a>
+                    <li><a href="/admin"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Profile</span></a>
                     </li>
-                    <li><a href="/staff/calendar"><i class="icon-calendar"></i><span
-                            class="hidden-tablet"> Calendar</span></a></li>
+                    <li><a href="/"><i class="icon-calendar"></i><span
+                            class="hidden-tablet"> Затраты</span></a></li>
+                    <li><a href="/"><i class="icon-calendar"></i><span
+                            class="hidden-tablet"> Прибыль</span></a></li>
+                    <li><a href="/"><i class="icon-calendar"></i><span
+                            class="hidden-tablet"> Сотрудники</span></a></li>
+                    <li><a href="/"><i class="icon-calendar"></i><span
+                            class="hidden-tablet"> Филиалы</span></a></li>
                     <li><a href="/logout"><i class="icon-off"></i><span
                             class="hidden-tablet"> Logout</span></a></li>
                 </ul>
@@ -127,7 +134,7 @@
         <div class="span10" align="center">
             <div class=""></div>
         <div class="span3">
-        <#if staff.sex == 'MALE'>
+        <#if admin.sex == 'MALE'>
             <img src="resources/img/gallery/photo12.jpg" class="img-circle" style="height: 200px">
         </div>
         <#else >
@@ -141,7 +148,7 @@
                             Name :
                         </th>
                         <td>
-                        ${staff.firstname}
+                        ${admin.firstname}
                         </td>
                     </tr>
                     <tr>
@@ -149,7 +156,7 @@
                             Surname :
                         </th>
                         <td>
-                        ${staff.surname}
+                        ${admin.surname}
                         </td>
                     </tr>
                     <tr>
@@ -157,7 +164,7 @@
                             Email :
                         </th>
                         <td>
-                        ${staff.email}
+                        ${admin.email}
                         </td>
                     </tr>
                     <tr>
@@ -165,7 +172,7 @@
                             Login :
                         </th>
                         <td>
-                        ${staff.login}
+                        ${admin.login}
                         </td>
                     </tr>
                     <tr>
@@ -173,7 +180,7 @@
                             Sex :
                         </th>
                         <td>
-                        ${staff.sex}
+                        ${admin.sex}
                         </td>
                     </tr>
 

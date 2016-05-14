@@ -63,14 +63,14 @@
                     <li>
 
                         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="halflings-icon white user"></i> ${client.firstname}
+                            <i class="halflings-icon white user"></i> ${admin.firstname}
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-title">
                                 <span>Account Settings</span>
                             </li>
-                            <li><a href="/profile"><i class="halflings-icon user"></i> Profile</a></li>
+                            <li><a href="/staff"><i class="halflings-icon user"></i> Profile</a></li>
                             <li><a href="/logout"><i class="halflings-icon off"></i> Logout</a></li>
                         </ul>
                     </li>
@@ -95,9 +95,16 @@
         <div id="sidebar-left" class="span2">
             <div class="nav-collapse sidebar-nav">
                 <ul class="nav nav-tabs nav-stacked main-menu">
-                    <li><a href="/profile"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Profile</span></a></li>
-                    <li><a href="/calendar"><i class="icon-calendar"></i><span
-                            class="hidden-tablet"> Calendar</span></a></li>
+                    <li><a href="/admin"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Profile</span></a>
+                    </li>
+                    <li><a href="/"><i class="icon-calendar"></i><span
+                            class="hidden-tablet"> Затраты</span></a></li>
+                    <li><a href="/"><i class="icon-calendar"></i><span
+                            class="hidden-tablet"> Прибыль</span></a></li>
+                    <li><a href="/"><i class="icon-calendar"></i><span
+                            class="hidden-tablet"> Сотрудники</span></a></li>
+                    <li><a href="/"><i class="icon-calendar"></i><span
+                            class="hidden-tablet"> Филиалы</span></a></li>
                     <li><a href="/logout"><i class="icon-off"></i><span
                             class="hidden-tablet"> Logout</span></a></li>
                 </ul>
@@ -116,75 +123,72 @@
 
         <!-- start: Content -->
         <div id="content" class="span10">
-
-
             <ul class="breadcrumb">
                 <li>
                     <i class="icon-home"></i>
-                    <a href="index.html">Home</a>
+                    <a href="/staff">Home</a>
                     <i class="icon-angle-right"></i>
                 </li>
                 <li><a href="#">Profile</a></li>
             </ul>
-
-            <center>
-            <div class="span10" align="center">
-                <div class=""></div>
-            <div class="span3">
-            <#if client.sex == 'MALE'>
-                <img src="resources/img/gallery/photo12.jpg" class="img-circle ">
-            </div>
-            <#else >
-                <img src="resources/img/gallery/photo13.jpg" class="img-circle ">
-            </div>
-            </#if>
-                <div class="span6">
-                    <table class="table table-responsive">
-                        <tr>
-                            <th>
-                                Name :
-                            </th>
-                            <td>
-                            ${client.firstname}
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                Surname :
-                            </th>
-                            <td>
-                            ${client.surname}
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                Email :
-                            </th>
-                            <td>
-                            ${client.email}
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                Login :
-                            </th>
-                            <td>
-                            ${client.login}
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                Sex :
-                            </th>
-                            <td>
-                            ${client.sex}
-                            </td>
-                        </tr>
-
-                    </table>
-                </div>
+        <div class="span10" align="center">
+            <div class=""></div>
+        <div class="span3">
+        <#if admin.sex == 'MALE'>
+            <img src="resources/img/gallery/photo12.jpg" class="img-circle" style="height: 200px">
         </div>
-        </center>
+        <#else >
+            <img src="resources/img/gallery/photo13.jpg" class="img-circle" style="height: 200px">
+        </div>
+        </#if>
+            <div class="span6">
+                <table class="table table-responsive">
+                    <tr>
+                        <th>
+                            Name :
+                        </th>
+                        <td>
+                        ${admin.firstname}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Surname :
+                        </th>
+                        <td>
+                        ${admin.surname}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Email :
+                        </th>
+                        <td>
+                        ${admin.email}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Login :
+                        </th>
+                        <td>
+                        ${admin.login}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Sex :
+                        </th>
+                        <td>
+                        ${admin.sex}
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+        </div>
 
     </div>
     <!--/.fluid-container-->

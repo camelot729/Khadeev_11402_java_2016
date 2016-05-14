@@ -22,7 +22,7 @@ public class StaffRegFormToUserTransformer {
         user.setEmail(form.getEmail());
         user.setLogin(form.getLogin());
         user.setPassword(encoder.encode(form.getPassword()));
-        user.setRole(Role.ROLE_CLIENT);
+        user.setRole(Role.ROLE_STAFF);
         user.setSex(form.getSex());
         return user;
     }

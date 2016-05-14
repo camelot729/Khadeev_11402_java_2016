@@ -30,7 +30,7 @@ public class StaffServiceImpl implements StaffService {
     }
 
     @Override
-    public void saveNewClient(RegistrationForm form) {
+    public void saveNewStaff(RegistrationForm form) {
         StaffEntity staffEntity = StaffRegFormToUserTransformer.transform(form);
         staffRepository.save(staffEntity);
     }

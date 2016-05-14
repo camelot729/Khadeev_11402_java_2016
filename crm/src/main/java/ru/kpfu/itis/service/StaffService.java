@@ -15,5 +15,5 @@ public interface StaffService {
 
     StaffEntity getStaffEntityById(Integer id);
 
-    void saveNewClient(RegistrationForm form);
+    void saveNewStaff(RegistrationForm form);
 }
